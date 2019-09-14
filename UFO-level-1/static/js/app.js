@@ -31,56 +31,12 @@ var button = d3.select("#filter-btn");
 button.on("click", function(event) {
   d3.event.preventDefault();
   deleteTbody();
-  var dateInput = d3.select("#date").property("value");
-  
-  if (dateInput.trim() == "" ) {
-    // display the whole database if the date field has no input
-    var filteredData = tableData;
-  } else {
-    // otherwise, display the filtered dataset  
-    var filteredData = tableData.filter(ufoSighting => 
-      ufoSighting.date == dateInput.trim());
-  };
-
-  var cityInput = d3.select("#city").property("value");
-  
-  if (cityInput.trim() == "" ) {
-    // display the whole database if the city field has no input
-    var filteredData = tableData;
-  } else {
-    // otherwise, display the filtered dataset  
-    var filteredData = tableData.filter(ufoSighting => 
-      ufoSighting.city == cityInput.trim());
-  };
-
-  var stateInput = d3.select("#state").property("value");
-  
-  if (stateInput.trim() == "" ) {
-    // display the whole database if the state field has no input
-    var filteredData = tableData;
-  } else {
-    // otherwise, display the filtered dataset  
-    var filteredData = tableData.filter(ufoSighting => 
-      ufoSighting.state == stateInput.trim());
-  };
-
-  var countryInput = d3.select("#country").property("value");
-  
-  if (countryInput.trim() == "" ) {
-    // display the whole database if the country field has no input
-    var filteredData = tableData;
-  } else {
-    // otherwise, display the filtered dataset  
-    var filteredData = tableData.filter(ufoSighting => 
-      ufoSighting.country == countryInput.trim());
-  };
-
   var shapeInput = d3.select("#shape").property("value");
   
   if (shapeInput.trim() == "" ) {
     // display the whole database if the shape field has no input
     var filteredData = tableData;
-  } else {
+  } else{
     // otherwise, display the filtered dataset  
     var filteredData = tableData.filter(ufoSighting => 
       ufoSighting.shape == shapeInput.trim());
