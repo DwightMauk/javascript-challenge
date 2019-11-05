@@ -8,3 +8,7 @@ Added a column for date/time, city, state, country, shape, and comment.
 
 
 Used a date form in the HTML document and wrote JavaScript code that listened for events and searched through the date/time column to find rows that matched user input.
+
+![js](ufo2.PNG)
+
+![page](ufo1.PNG)
